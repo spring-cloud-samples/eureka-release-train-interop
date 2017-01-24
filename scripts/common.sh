@@ -112,3 +112,5 @@ if [[ ! -e "${ROOT_FOLDER}/.git" ]]; then
 fi
 
 mkdir -p ${ROOT_FOLDER}/target
+
+export ROOT_FOLDER

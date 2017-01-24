@@ -1,8 +1,8 @@
-= Eureka Brixton vs Angel compatbility
+= Camden & Brixton Eureka interop
 
-To test the compatibility of Eureka Brixton Server and Angel Eureka client just run
+To test the compatibility of Eureka Camden / Brixton Server and Camden / Eureka applications
 
 [source,bash]
 ---------
-./scripts/scenario_brixton_tester.sh
+./scripts/runAcceptanceTests.sh
 ---------
