@@ -1,0 +1,13 @@
+*.class
+*.iml
+
+.idea
+
+.idea/
+.gradle/
+target/
+build/
+
+hs_err_pid*
+.DS_Store
+*.log

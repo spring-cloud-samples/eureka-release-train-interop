@@ -1,0 +1,8 @@
+= Eureka Brixton vs Angel compatbility
+
+To test the compatibility of Eureka Brixton Server and Angel Eureka client just run
+
+[source,bash]
+---------
+./scripts/scenario_brixton_tester.sh
+---------
