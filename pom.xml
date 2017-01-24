@@ -9,16 +9,17 @@
 
     -->
     <groupId>com.example</groupId>
-    <artifactId>angel-vs-brixton</artifactId>
+    <artifactId>brixton-vs-camden</artifactId>
     <version>1.0.0.BUILD-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <modules>
-        <module>eureka-brixton-server</module>
-        <module>eureka-angel-client</module>
         <module>eureka-brixton-client</module>
+        <module>eureka-brixton-server</module>
         <module>eureka-brixton-tester</module>
-        <module>eureka-angel-tester</module>
+        <module>eureka-camden-client</module>
+        <module>eureka-camden-server</module>
+        <module>eureka-camden-tester</module>
     </modules>
 
     <properties>

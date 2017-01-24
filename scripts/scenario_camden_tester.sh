@@ -33,9 +33,9 @@ We will do it in the following way:
 17) Now we have a Camden Eureka Server, Camden app that will call a Brixton app
 18) Call localhost:8779/check to make the tester send a request to the client that will find the server
 19) Assert that the flow is working
-12) Kill eureka-camden-server
-13) Kill eureka-camden-tester
-14) Kill eureka-brixton-client
+20) Kill eureka-camden-server
+21) Kill eureka-camden-tester
+22) Kill eureka-brixton-client
 
 EOF
 
@@ -52,7 +52,7 @@ check_app_presence_in_discovery TESTER
 
 send_test_request 8779
 echo -e "\n\nCamden app successfully communicated with a Brixton app via a Brixton Eureka"
-kill_app eureka-camden-server
+kill_app eureka-brixton-server
 
 java_jar eureka-camden-server
 wait_for_app_to_boot_on_port 8761
