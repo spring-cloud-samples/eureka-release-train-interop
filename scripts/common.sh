@@ -1,12 +1,45 @@
 #!/usr/bin/env bash
 
-set -e
+set -o errexit
 
 WAIT_TIME="${WAIT_TIME:-5}"
 RETRIES="${RETRIES:-70}"
 SERVICE_PORT="${SERVICE_PORT:-8081}"
 TEST_ENDPOINT="${TEST_ENDPOINT:-check}"
 
+# ${RETRIES} number of times will try to curl to /health endpoint to passed port $1 and localhost
+function wait_for_app_to_boot_on_port() {
+    curl_health_endpoint $1 "127.0.0.1"
+}
+
+# ${RETRIES} number of times will try to curl to /health endpoint to passed port $1 and host $2
+function curl_health_endpoint() {
+    local PASSED_HOST="${2:-$HEALTH_HOST}"
+    local READY_FOR_TESTS=1
+    for i in $( seq 1 "${RETRIES}" ); do
+        sleep "${WAIT_TIME}"
+        curl -m 5 "${PASSED_HOST}:$1/health" && READY_FOR_TESTS=0 && break
+        echo "Fail #$i/${RETRIES}... will try again in [${WAIT_TIME}] seconds"
+    done
+    return $READY_FOR_TESTS
+}
+
+# ${RETRIES} number of times will try to curl to /health endpoint to passed port $1 and localhost
+function wait_for_new_boot_app_to_boot_on_port() {
+    curl_new_health_endpoint $1 "127.0.0.1"
+}
+
+# ${RETRIES} number of times will try to curl to /health endpoint to passed port $1 and host $2
+function curl_new_health_endpoint() {
+    local PASSED_HOST="${2:-$HEALTH_HOST}"
+    local READY_FOR_TESTS=1
+    for i in $( seq 1 "${RETRIES}" ); do
+        sleep "${WAIT_TIME}"
+        curl -m 5 "${PASSED_HOST}:$1/actuator/health" && READY_FOR_TESTS=0 && break
+        echo "Fail #$i/${RETRIES}... will try again in [${WAIT_TIME}] seconds"
+    done
+    return $READY_FOR_TESTS
+}
 # ${RETRIES} number of times will try to curl to /health endpoint to passed port $1 and localhost
 function wait_for_app_to_boot_on_port() {
     curl_health_endpoint $1 "127.0.0.1"

@@ -14,12 +14,21 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>eureka-brixton-client</module>
-        <module>eureka-brixton-server</module>
-        <module>eureka-brixton-tester</module>
-        <module>eureka-camden-client</module>
-        <module>eureka-camden-server</module>
-        <module>eureka-camden-tester</module>
+        <!--<module>eureka-brixton-client</module>-->
+        <!--<module>eureka-brixton-server</module>-->
+        <!--<module>eureka-brixton-tester</module>-->
+        <!--<module>eureka-camden-client</module>-->
+        <!--<module>eureka-camden-server</module>-->
+        <!--<module>eureka-camden-tester</module>-->
+        <!--<module>eureka-dalston-client</module>-->
+        <!--<module>eureka-dalston-server</module>-->
+        <!--<module>eureka-dalston-tester</module>-->
+        <module>eureka-edgware-client</module>
+        <module>eureka-edgware-server</module>
+        <module>eureka-edgware-tester</module>
+        <module>eureka-finchley-client</module>
+        <module>eureka-finchley-server</module>
+        <module>eureka-finchley-tester</module>
     </modules>
 
     <properties>
