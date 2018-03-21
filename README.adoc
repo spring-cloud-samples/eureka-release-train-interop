@@ -1,6 +1,6 @@
-= Camden & Brixton Eureka interop
+= Eureka interop
 
-To test the compatibility of Eureka Camden / Brixton Server and Camden / Eureka applications
+To test the compatibility of Eureka with different Spring Cloud release trains
 
 [source,bash]
 ---------
