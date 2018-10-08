@@ -29,6 +29,9 @@
         <module>eureka-finchley-client</module>
         <module>eureka-finchley-server</module>
         <module>eureka-finchley-tester</module>
+        <module>eureka-greenwich-client</module>
+        <module>eureka-greenwich-server</module>
+        <module>eureka-greenwich-tester</module>
     </modules>
 
     <properties>

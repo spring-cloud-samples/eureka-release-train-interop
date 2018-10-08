@@ -3,6 +3,8 @@
 source common.sh || source scripts/common.sh || echo "No common.sh script found..."
 
 set -o errexit
+set -o errtrace
+set -o pipefail
 
 cat <<EOF
 This Bash file will show you the scenario in which Eureka Server is in edgware version and the Client is finchley.

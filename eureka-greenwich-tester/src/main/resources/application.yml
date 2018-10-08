@@ -1,6 +1,6 @@
-server.port: 8778
+server.port: 8779
 
-spring.application.name: client
+spring.application.name: tester
 
 eureka:
   instance:
