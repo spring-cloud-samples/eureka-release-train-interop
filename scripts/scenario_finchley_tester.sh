@@ -37,30 +37,33 @@ We will do it in the following way:
 
 EOF
 
-java_jar eureka-edgware-server
-wait_for_app_to_boot_on_port 8761
+serverPort="8761"
+java_jar eureka-edgware-server "-Dserver.port=${serverPort}"
+wait_for_app_to_boot_on_port "${serverPort}"
 
-java_jar eureka-finchley-client
-wait_for_new_boot_app_to_boot_on_port 8778
+clientPort="8778"
+java_jar eureka-finchley-client "-Dserver.port=${clientPort}"
+wait_for_new_boot_app_to_boot_on_port "${clientPort}"
 check_app_presence_in_discovery CLIENT
 
-java_jar eureka-edgware-tester
-wait_for_app_to_boot_on_port 7779
+testerPort="7779"
+java_jar eureka-edgware-tester "-Dserver.port=${testerPort}"
+wait_for_app_to_boot_on_port "${testerPort}"
 check_app_presence_in_discovery TESTER
 
-send_test_request 7779
+send_test_request "${testerPort}"
 echo -e "\n\nedgware app successfully communicated with a finchley app via a edgware Eureka"
 kill_app eureka-edgware-server
 
 echo "Sleeping for 30 seconds"
 sleep 30
 
-java_jar eureka-finchley-server
-wait_for_new_boot_app_to_boot_on_port 8761
+java_jar eureka-finchley-server "-Dserver.port=${serverPort}"
+wait_for_new_boot_app_to_boot_on_port "${serverPort}"
 check_app_presence_in_discovery CLIENT
 check_app_presence_in_discovery TESTER
 
-send_test_request 7779
+send_test_request "${testerPort}"
 echo -e "\n\nedgware app successfully communicated with a finchley app via a finchley Eureka"
 
 kill_app eureka-finchley-server

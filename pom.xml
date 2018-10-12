@@ -23,9 +23,9 @@
         <!--<module>eureka-dalston-client</module>-->
         <!--<module>eureka-dalston-server</module>-->
         <!--<module>eureka-dalston-tester</module>-->
-        <module>eureka-edgware-client</module>
+        <!--<module>eureka-edgware-client</module>
         <module>eureka-edgware-server</module>
-        <module>eureka-edgware-tester</module>
+        <module>eureka-edgware-tester</module>-->
         <module>eureka-finchley-client</module>
         <module>eureka-finchley-server</module>
         <module>eureka-finchley-tester</module>
