@@ -26,7 +26,7 @@ public class EurekaBrixtonClientTesterApplication {
 
 	@RequestMapping("/check")
 	public String getHealthOfClient() {
-		return restTemplate.getForObject("http://client/health", String.class);
+		return restTemplate.getForObject("https://client/health", String.class);
 	}
 
 	public static void main(String[] args) {
