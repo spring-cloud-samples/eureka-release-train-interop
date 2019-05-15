@@ -11,3 +11,10 @@ build/
 hs_err_pid*
 .DS_Store
 *.log
+.vscode/
+.settings.xml
+.project.xml
+.project/
+.project
+.classpath
+.settings/

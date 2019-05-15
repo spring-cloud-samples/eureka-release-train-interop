@@ -32,6 +32,9 @@
         <module>eureka-greenwich-client</module>
         <module>eureka-greenwich-server</module>
         <module>eureka-greenwich-tester</module>
+        <module>eureka-hoxton-client</module>
+        <module>eureka-hoxton-server</module>
+        <module>eureka-hoxton-tester</module>
     </modules>
 
     <properties>

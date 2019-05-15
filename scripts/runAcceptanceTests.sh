@@ -20,3 +20,5 @@ ${ROOT_FOLDER}/scripts/scenario_finchley_tester.sh
 ${ROOT_FOLDER}/scripts/kill_apps.sh
 ${ROOT_FOLDER}/scripts/scenario_greenwich_tester.sh
 ${ROOT_FOLDER}/scripts/kill_apps.sh
+${ROOT_FOLDER}/scripts/scenario_hoxton_tester.sh
+${ROOT_FOLDER}/scripts/kill_apps.sh
