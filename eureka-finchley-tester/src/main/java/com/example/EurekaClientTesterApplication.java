@@ -26,7 +26,7 @@ public class EurekaClientTesterApplication {
 
 	@GetMapping("/check")
 	public String foo() {
-		return restTemplate.getForObject("https://client/foo", String.class);
+		return restTemplate.getForObject("http://client/foo", String.class);
 	}
 
 	public static void main(String[] args) {
