@@ -15,10 +15,12 @@ trap "{ ${ROOT_FOLDER}/scripts/kill_apps.sh; }" EXIT
 #${ROOT_FOLDER}/scripts/scenario_camden_tester.sh
 #${ROOT_FOLDER}/scripts/scenario_dalston_tester.sh
 #${ROOT_FOLDER}/scripts/scenario_edgware_tester.sh
-${ROOT_FOLDER}/scripts/kill_apps.sh
-${ROOT_FOLDER}/scripts/scenario_finchley_tester.sh
-${ROOT_FOLDER}/scripts/kill_apps.sh
-${ROOT_FOLDER}/scripts/scenario_greenwich_tester.sh
-${ROOT_FOLDER}/scripts/kill_apps.sh
-${ROOT_FOLDER}/scripts/scenario_hoxton_tester.sh
+# ${ROOT_FOLDER}/scripts/kill_apps.sh
+# ${ROOT_FOLDER}/scripts/scenario_finchley_tester.sh
+# ${ROOT_FOLDER}/scripts/kill_apps.sh
+# ${ROOT_FOLDER}/scripts/scenario_greenwich_tester.sh
+# ${ROOT_FOLDER}/scripts/kill_apps.sh
+# ${ROOT_FOLDER}/scripts/scenario_hoxton_tester.sh
+# ${ROOT_FOLDER}/scripts/kill_apps.sh
+${ROOT_FOLDER}/scripts/scenario_ilford_tester.sh
 ${ROOT_FOLDER}/scripts/kill_apps.sh

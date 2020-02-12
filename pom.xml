@@ -23,18 +23,21 @@
         <!--<module>eureka-dalston-client</module>-->
         <!--<module>eureka-dalston-server</module>-->
         <!--<module>eureka-dalston-tester</module>-->
-        <module>eureka-edgware-client</module>
+        <!-- <module>eureka-edgware-client</module>
         <module>eureka-edgware-server</module>
         <module>eureka-edgware-tester</module>
         <module>eureka-finchley-client</module>
         <module>eureka-finchley-server</module>
-        <module>eureka-finchley-tester</module>
-        <module>eureka-greenwich-client</module>
+        <module>eureka-finchley-tester</module> -->
+        <!-- <module>eureka-greenwich-client</module>
         <module>eureka-greenwich-server</module>
-        <module>eureka-greenwich-tester</module>
+        <module>eureka-greenwich-tester</module> -->
         <module>eureka-hoxton-client</module>
         <module>eureka-hoxton-server</module>
         <module>eureka-hoxton-tester</module>
+        <module>eureka-ilford-client</module>
+        <module>eureka-ilford-server</module>
+        <module>eureka-ilford-tester</module>
     </modules>
 
     <properties>
