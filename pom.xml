@@ -38,6 +38,9 @@
         <module>eureka-ilford-client</module>
         <module>eureka-ilford-server</module>
         <module>eureka-ilford-tester</module>
+        <module>eureka-jubilee-client</module>
+        <module>eureka-jubilee-server</module>
+        <module>eureka-jubilee-tester</module>
     </modules>
 
     <properties>
