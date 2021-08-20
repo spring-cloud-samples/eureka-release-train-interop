@@ -18,11 +18,6 @@ public class EurekaClientTesterApplication {
 	@Autowired @LoadBalanced
 	RestTemplate restTemplate;
 
-	@Bean @LoadBalanced
-	RestTemplate restTemplate() {
-		return new RestTemplate();
-	}
-
 	@GetMapping("/check")
 	public String foo() {
 		return restTemplate.getForObject("http://client/foo", String.class);
@@ -30,5 +25,14 @@ public class EurekaClientTesterApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(EurekaClientTesterApplication.class, args);
+	}
+}
+
+@Configuration
+class Config {
+
+	@Bean @LoadBalanced
+	RestTemplate restTemplate() {
+		return new RestTemplate();
 	}
 }
