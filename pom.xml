@@ -32,15 +32,18 @@
         <!-- <module>eureka-greenwich-client</module>
         <module>eureka-greenwich-server</module>
         <module>eureka-greenwich-tester</module> -->
-        <module>eureka-hoxton-client</module>
+<!--        <module>eureka-hoxton-client</module>
         <module>eureka-hoxton-server</module>
-        <module>eureka-hoxton-tester</module>
+        <module>eureka-hoxton-tester</module>-->
         <module>eureka-ilford-client</module>
         <module>eureka-ilford-server</module>
         <module>eureka-ilford-tester</module>
         <module>eureka-jubilee-client</module>
         <module>eureka-jubilee-server</module>
         <module>eureka-jubilee-tester</module>
+        <module>eureka-kilburn-client</module>
+        <module>eureka-kilburn-server</module>
+        <module>eureka-kilburn-tester</module>
     </modules>
 
     <properties>
